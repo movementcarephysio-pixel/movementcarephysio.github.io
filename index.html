@@ -1,10 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Movement Care Patient Portal</title>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="robots"
+    content="noindex, nofollow"
+  />
+
+  <title>Patient Portal | Movement Care</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(20, 35, 60, 0.08);
+      border-radius: 28px;
+      padding: 44px 36px 36px;
+      text-align: center;
+      box-shadow:
+        0 24px 70px rgba(20, 35, 60, 0.10),
+        0 4px 18px rgba(20, 35, 60, 0.05);
+    }
+
+    .brand-mark {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 22px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+        145deg,
+        #174ea6,
+        #0d7c66
+      );
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      box-shadow:
+        0 12px 28px rgba(23, 78, 166, 0.22);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #667085;
+    }
+
+    .divider {
+      width: 54px;
+      height: 3px;
+      margin: 28px auto;
+      border-radius: 999px;
+      background: #174ea6;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 25px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+    }
+
+    .description {
+      margin: 14px auto 28px;
+      max-width: 390px;
+      font-size: 15px;
+      line-height: 1.65;
+      color: #667085;
+    }
+
+    .login-button {
+      display: flex;
+      width: 100%;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      background: #174ea6;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 650;
+      letter-spacing: 0.1px;
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+      box-shadow:
+        0 10px 24px rgba(23, 78, 166, 0.20);
+    }
+
+    .login-button:hover {
+      background: #123f88;
+      transform: translateY(-1px);
+      box-shadow:
+        0 14px 30px rgba(23, 78, 166, 0.25);
+    }
+
+    .login-button:active {
+      transform: translateY(0);
+    }
+
+    .security {
+      margin-top: 24px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #f4f8f7;
+      color: #52606d;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .security strong {
+      color: #245c52;
+    }
+
+    .footer {
+      margin-top: 26px;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #98a2b3;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        padding: 36px 24px 28px;
+        border-radius: 24px;
+      }
+
+      .brand {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Movement Care Patient Portal</h1>
-  <p>Secure patient portal.</p>
+  <main class="page">
+    <section class="card">
+
+      <div class="brand-mark">
+        MC
+      </div>
+
+      <h2 class="brand">
+        MOVEMENT CARE
+      </h2>
+
+      <p class="subtitle">
+        Physiotherapy & Rehabilitation
+      </p>
+
+      <div class="divider"></div>
+
+      <h1>
+        Patient Portal
+      </h1>
+
+      <p class="description">
+        Secure access to your appointments, treatment
+        information, clinical documents, prescriptions,
+        billing and rehabilitation records.
+      </p>
+
+      <!--
+        PORTAL LOGIN URL WILL BE ADDED HERE
+        AFTER WE CONFIRM YOUR EXISTING PRODUCTION PORTAL URL.
+      -->
+
+      <a
+        class="login-button"
+        href="#"
+        onclick="return false;"
+      >
+        Open Secure Patient Portal
+      </a>
+
+      <div class="security">
+        <strong>🔒 Secure access</strong><br />
+        Your clinical information is protected and
+        accessible only through your authorized patient account.
+      </div>
+
+      <div class="footer">
+        Movement Care Physiotherapy & Rehabilitation<br />
+        Secure Patient Access
+      </div>
+
+    </section>
+  </main>
 </body>
 </html>
